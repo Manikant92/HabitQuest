@@ -13,28 +13,28 @@ It makes positive behavior change fun, social, and rewarding by combining dynami
 
 # Key Features (High Level)
 
--Daily Dynamic Quests:
+- Daily Dynamic Quests:
 AI-generated daily tasks personalized to users' goals and habits.
 
--Gamified Progression:
+- Gamified Progression:
 Streaks, achievements, levels, and leaderboard systems that reward consistency.
 
--Incentive-Based Rewards:
+- Incentive-Based Rewards:
 Earn points for completing quests and redeem them for real-world rewards like favorite foods.
 
--AI Forecasted Progress:
+- AI Forecasted Progress:
 Smart prediction engine forecasting future points, milestones, and habit strength based on behavior.
 
--Social & Behavioral Tracking:
+- Social & Behavioral Tracking:
 Automatic social media and behavior tracking (via cookie sessions) to adjust user challenges dynamically.
 
--Game Center for Brain Fitness:
+- Game Center for Brain Fitness:
 Mini-games to boost memory, focus, and cognitive skills.
 
--Behavioral & Psychological Insights:
+- Behavioral & Psychological Insights:
 A system that monitors user patterns and suggests improvements for better mental resilience and habit sustainability.
 
--Skill Evolution Engine:
+- Skill Evolution Engine:
 Evolve soft and hard skills through progressive challenges and self-growth quests.
 
 -AI Knowledge Quizzes:
