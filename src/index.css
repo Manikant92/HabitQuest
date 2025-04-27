@@ -1,0 +1,190 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Dark mode (default) */
+  :root, .dark {
+    --background: 230 15% 15%;
+    --foreground: 220 10% 95%;
+
+    --card: 230 20% 20%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 230 20% 20%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 160 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 25% 25%;
+    --muted-foreground: 220 10% 75%;
+
+    --accent: 270 50% 30%;
+    --accent-foreground: 220 10% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 25% 35%;
+    --input: 230 25% 35%;
+    --ring: 160 80% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 230 25% 18%;
+    --sidebar-foreground: 220 10% 90%;
+    --sidebar-primary: 160 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 30% 25%;
+    --sidebar-accent-foreground: 230 20% 90%;
+    --sidebar-border: 230 25% 30%;
+    --sidebar-ring: 160 80% 55%;
+  }
+
+  /* Light mode */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 160 80% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 60% 55%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 270 60% 95%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 160 80% 40%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 10% 3.9%;
+    --sidebar-primary: 160 80% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5.9% 90%;
+    --sidebar-accent-foreground: 240 10% 3.9%;
+    --sidebar-border: 240 5.9% 85%;
+    --sidebar-ring: 160 80% 40%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image: url('/habitquest-uploads/7b49117b-2964-437c-bc83-126a197052e9.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(16, 24, 39, 0.92);
+    background-blend-mode: overlay;
+  }
+
+  /* Light mode specific background */
+  .light body {
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: overlay;
+  }
+}
+
+@layer components {
+  .pixel-card {
+    @apply border-2 border-primary bg-black/60 backdrop-blur-sm rounded-md p-4 shadow-lg hover:shadow-primary/20 transition-all duration-300;
+  }
+  
+  .pixel-title {
+    @apply font-mono text-lg font-bold text-primary mb-2;
+  }
+  
+  .pixel-border {
+    @apply border-2 border-primary rounded-md;
+  }
+  
+  .point-circle {
+    @apply inline-block h-3 w-3 rounded-full bg-primary;
+  }
+
+  .task-button {
+    @apply relative flex items-center w-full px-4 py-3 rounded-lg transition-all hover:bg-accent;
+  }
+
+  .task-icon {
+    @apply mr-3 h-5 w-5 text-primary;
+  }
+
+  .point-counter {
+    @apply ml-auto flex items-center gap-1 text-sm font-medium text-muted-foreground;
+  }
+
+  .reward-card {
+    @apply relative overflow-hidden rounded-xl border border-primary bg-black/50 backdrop-blur-sm p-5 transition-all hover:shadow-md hover:shadow-primary/20;
+  }
+
+  .stat-card {
+    @apply flex flex-col rounded-xl border border-primary/50 bg-black/40 backdrop-blur-sm p-5 transition-all hover:border-primary;
+  }
+
+  .cyber-glow {
+    @apply shadow-[0_0_10px_rgba(127,255,212,0.7)];
+  }
+  
+  .neon-text {
+    @apply text-primary;
+  }
+
+  .grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(127, 255, 212, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(127, 255, 212, 0.1) 1px, transparent 1px);
+  }
+
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .hardware-accelerated {
+    transform: translateZ(0);
+  }
+  
+  /* Light mode adjustments */
+  .light .pixel-card {
+    @apply bg-white/80 border-primary shadow-md;
+  }
+  
+  .light .stat-card {
+    @apply bg-white/80;
+  }
+  
+  .light .reward-card {
+    @apply bg-white/80;
+  }
+  
+  @keyframes point-earned {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+}
