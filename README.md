@@ -14,6 +14,7 @@ It makes positive behavior change fun, social, and rewarding by combining dynami
 # Key Features (High Level)
 
 - Daily Dynamic Quests:
+
 AI-generated daily tasks personalized to users' goals and habits.
 
 - Gamified Progression:
