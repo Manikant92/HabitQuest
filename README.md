@@ -79,7 +79,7 @@ The only requirement is having Node.js & npm installed - [install with nvm](http
 
 Prerequisites:
 
-Setup Supabase database with your account and change in src/integrations/client.ts file
+- Setup Supabase database with your account and change in src/integrations/client.ts file
 
 ```sh
 const SUPABASE_URL = "https://sampleid.supabase.co";
