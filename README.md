@@ -34,18 +34,23 @@ It makes positive behavior change fun, social, and rewarding by combining dynami
     Automatic social media and behavior tracking (via cookie sessions) to adjust user challenges dynamically.
 
 - Game Center for Brain Fitness:
+
     Mini-games to boost memory, focus, and cognitive skills.
 
 - Behavioral & Psychological Insights:
+
     A system that monitors user patterns and suggests improvements for better mental resilience and habit sustainability.
 
 - Skill Evolution Engine:
+
     Evolve soft and hard skills through progressive challenges and self-growth quests.
 
 - AI Knowledge Quizzes:
+
     Daily AI-powered quizzes to build awareness around fitness, mental health, and habit science.
 
 - Built-in Journal:
+
     Reflect, track moods, and document the habit journey all within the app.
 
 # Why HabitQuest?
